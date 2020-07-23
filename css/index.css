@@ -1,0 +1,176 @@
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-item {
+    color: white;
+    font-weight: bold;
+    font-size: 3.5em;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+
+.flex-button {
+    /* padding: 0;
+    margin: 0;
+    list-style: none; */
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    line-height:30px;
+}
+
+
+.column {
+  float: left;
+  width: 75%;
+}
+
+.column2 {
+    float: left;
+    width: 25%;
+}
+
+.button-area {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80%
+}
+
+.btn {
+  width: 100%;
+  background: #72C3DC;
+  padding: 10px 20px;
+  font-size: .9em;
+  margin: 15px;
+  color: white;
+}
+
+.grid1 {
+  background-color: #000000;
+}
+
+.grid2 {
+  background-color: #333333
+}
+
+.grid3 {
+  background-color: #2B8EAD
+}
+
+.grid4 {
+  background-color: #EFEFEF;
+}
+
+.grid5 {
+  background-color: #FFFFFF
+}
+
+.grid6 {
+  background-color: #72C3DC
+}
+
+.grid7 {
+  background-color: #6F98A8
+}
+
+.grid8 {
+  background-color: #BFBFBF
+}
+
+.grid9 {
+  background-color: #2F454E;
+}
+
+.text-block {
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (device-width: 375px) {
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .flex-item {
+    width: 100%;
+    height: 64px;
+  }
+
+  .column2 {
+    float: left;
+    width: 100%;
+  }
+
+  .button-area {
+    display: inline;
+    text-align: center;
+  }
+
+  .btn {
+    width: 25%;
+  }
+
+  .main-grid {
+    color: #000000;
+    background-color: #EFEFEF;
+    margin-top: 10px;
+  }
+
+  .grid1 {
+    border-left: 10px solid #000000;
+  }
+
+  .grid2 {
+    border-left: 10px solid#333333;
+  }
+
+  .grid3 {
+    border-left: 10px solid #2B8EAD
+  }
+
+  .grid4 {
+    border-left: 10px solid #EFEFEF;
+  }
+
+  .grid5 {
+    border-left: 10px solid #FFFFFF
+  }
+
+  .grid6 {
+    border-left: 10px solid #72C3DC
+  }
+
+  .grid7 {
+    border-left: 10px solid#6F98A8
+  }
+  
+  .grid8 {
+    border-left: 10px solid #BFBFBF
+  }
+  
+  .grid9 {
+    border-left: 10px solid #2F454E;
+  }
+}
