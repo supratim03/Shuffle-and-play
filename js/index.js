@@ -8,7 +8,7 @@ function shuffle(){
 
 function sort() {
     var parent_div = $(".flex-container");
-    var childrens = parent.children();
+    var childrens = parent_div.children();
     childrens.sort(function(a,b){
         return $(a).data('id') - $(b).data('id')
     });
